@@ -1,0 +1,4 @@
+RewriteEngine on
+RewriteRule ^([a-zA-Z0-9_-]+)$ index.php?entrypoint=$1 [QSA]
+
+RewriteRule ^([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)$ index.php?entrypoint=$1&name=$2 [QSA]
